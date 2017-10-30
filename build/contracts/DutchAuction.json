@@ -1,0 +1,547 @@
+{
+  "contract_name": "DutchAuction",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "MAX_TOKENS_SOLD",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "phase0",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "endTime",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "radusToken",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "calcTokenPrice",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "startBlock",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "wallet",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "bids",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_radusToken",
+          "type": "address"
+        }
+      ],
+      "name": "setup",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "startAuction",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "WAITING_PERIOD",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "ceiling",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "timeCap",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "startTime",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "receiver",
+          "type": "address"
+        }
+      ],
+      "name": "bid",
+      "outputs": [
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalReceived",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "finalPrice",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "stage",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "updateStage",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "calcCurrentTokenPrice",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "calcStopPrice",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "receiver",
+          "type": "address"
+        }
+      ],
+      "name": "claimTokens",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "priceFactor",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "investor",
+          "type": "address"
+        }
+      ],
+      "name": "addInvestor",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "hitMoneyCap",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "white_list",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_wallet",
+          "type": "address"
+        },
+        {
+          "name": "_priceFactor",
+          "type": "uint256"
+        },
+        {
+          "name": "_ceiling",
+          "type": "uint256"
+        },
+        {
+          "name": "tokenCap",
+          "type": "uint256"
+        },
+        {
+          "name": "_timeCap",
+          "type": "uint256"
+        },
+        {
+          "name": "phase",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "BidSubmission",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "auctionTime",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "moneyRaised",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "tokensSold",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "finalPrice",
+          "type": "uint256"
+        }
+      ],
+      "name": "AuctionEnded",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b60405160c0806110ba8339810160405280805191906020018051919060200180519190602001805191906020018051919060200180519150505b600160a060020a038616158061005d575083155b80610066575084155b1561007057600080fd5b60028054600160a060020a03338116600160a060020a031992831617909255600180549289169290911691909117815560038590556004869055600f805460009260ff1990911690835b0217905550600a839055600b829055600c805461ff001916610100831515021790555b5050505050505b610fc7806100f36000396000f300606060405236156101435763ffffffff60e060020a60003504166317f5de9581146101485780633183ae8b1461016d5780633197cbb61461019457806336051730146101b957806339f64b52146101e857806348cd4cb11461020d578063521eb2731461023257806362ea82db1461026157806366d38203146102925780636b64c769146102b35780636f85c7e4146102c8578063753ed1bd146102ed578063756c0e771461031257806378e97925146103375780638da5cb5b1461035c5780639cf5453d1461038b578063a3c2c462146103b1578063a6b513ee146103d6578063c040e6b8146103fb578063c062f57814610432578063d9f8a4e214610469578063dd9dd6881461048e578063df8de3e7146104b3578063dfb2866d146104d4578063e641bde1146104f9578063e97497f61461051a578063f29c1a5114610541575b600080fd5b341561015357600080fd5b61015b610574565b60405190815260200160405180910390f35b341561017857600080fd5b61018061057a565b604051901515815260200160405180910390f35b341561019f57600080fd5b61015b610588565b60405190815260200160405180910390f35b34156101c457600080fd5b6101cc61058e565b604051600160a060020a03909116815260200160405180910390f35b34156101f357600080fd5b61015b61059d565b60405190815260200160405180910390f35b341561021857600080fd5b61015b6105c8565b60405190815260200160405180910390f35b341561023d57600080fd5b6101cc6105ce565b604051600160a060020a03909116815260200160405180910390f35b341561026c57600080fd5b61015b600160a060020a03600435166105dd565b60405190815260200160405180910390f35b341561029d57600080fd5b6102b1600160a060020a03600435166105ef565b005b34156102be57600080fd5b6102b1610700565b005b34156102d357600080fd5b61015b61075d565b60405190815260200160405180910390f35b34156102f857600080fd5b61015b610764565b60405190815260200160405180910390f35b341561031d57600080fd5b61015b61076a565b60405190815260200160405180910390f35b341561034257600080fd5b61015b610770565b60405190815260200160405180910390f35b341561036757600080fd5b6101cc610776565b604051600160a060020a03909116815260200160405180910390f35b61015b600160a060020a0360043516610785565b60405190815260200160405180910390f35b34156103bc57600080fd5b61015b610a64565b60405190815260200160405180910390f35b34156103e157600080fd5b61015b610a6a565b60405190815260200160405180910390f35b341561040657600080fd5b61040e610a70565b6040518082600481111561041e57fe5b60ff16815260200191505060405180910390f35b341561043d57600080fd5b61040e610a79565b6040518082600481111561041e57fe5b60ff16815260200191505060405180910390f35b341561047457600080fd5b61015b610b06565b60405190815260200160405180910390f35b341561049957600080fd5b61015b610bd5565b60405190815260200160405180910390f35b34156104be57600080fd5b6102b1600160a060020a0360043516610bfa565b005b34156104df57600080fd5b61015b610d97565b60405190815260200160405180910390f35b341561050457600080fd5b6102b1600160a060020a0360043516610d9d565b005b341561052557600080fd5b610180610e02565b604051901515815260200160405180910390f35b341561054c57600080fd5b610180600160a060020a0360043516610e0b565b604051901515815260200160405180910390f35b600a5481565b600c54610100900460ff1681565b60075481565b600054600160a060020a031681565b60006005544303611d4c01600454670de0b6b3a7640000028115156105be57fe5b0460010190505b90565b60055481565b600154600160a060020a031681565b600d6020526000908152604090205481565b60025433600160a060020a0390811691161461060a57600080fd5b6000805b600f5460ff16600481111561061f57fe5b1461062957600080fd5b600160a060020a038216151561063e57600080fd5b6000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0384811691909117808355600a54929116906370a082319030906040516020015260405160e060020a63ffffffff8416028152600160a060020a039091166004820152602401602060405180830381600087803b15156106bf57600080fd5b6102c65a03f115156106d057600080fd5b5050506040518051905010156106e557600080fd5b600f80546001919060ff191682805b02179055505b5b505b50565b60015433600160a060020a0390811691161461071b57600080fd5b6001805b600f5460ff16600481111561073057fe5b1461073a57600080fd5b600f80546002919060ff19166001835b021790555043600555426006555b5b505b565b62093a8081565b60035481565b600b5481565b60065481565b600254600160a060020a031681565b600080806004361480159061079b575060243614155b156107a557600080fd5b60025b600f5460ff1660048111156107b957fe5b1480156107d457506107c9610bd5565b6107d161059d565b11155b156107e1576107e1610e20565b5b60035b600f5460ff1660048111156107f657fe5b148015610809575062093a806007540142115b1561082457600f80546004919060ff19166001835b02179055505b6002805b600f5460ff16600481111561083957fe5b1461084357600080fd5b600b546006544203141561089057610859610e20565b600160a060020a0333163480156108fc0290604051600060405180830381858888f19350505050151561088b57600080fd5b610a59565b600160a060020a03851615156108a4573394505b600c54610100900460ff1680156108d45750600160a060020a0385166000908152600e602052604090205460ff16155b156108de57600080fd5b3493506008546108ec61059d565b600a54670de0b6b3a7640000905b04020392506008546003540391508184111561095757600c805460ff191660011790559092508290600160a060020a0385163483900380156108fc0290604051600060405180830381858888f19350505050151561095757600080fd5b5b828411801561096a5750600c5460ff16155b156109a75782935084600160a060020a03166108fc8534039081150290604051600060405180830381858888f1935050505015156109a757600080fd5b5b8315806109da5750600154600160a060020a031684156108fc0285604051600060405180830381858888f19350505050155b156109e457600080fd5b600160a060020a0385166000908152600d60205260409020805485019055600880548501905582841415610a1a57610a1a610e20565b5b84600160a060020a03167f9c89e828e6cee6374b68147c9e753e41746aad98ba255a527a4fc0ac1868bff98560405190815260200160405180910390a25b5b505b5b5050919050565b60085481565b60095481565b600f5460ff1681565b600060025b600f5460ff166004811115610a8f57fe5b148015610aaa5750610a9f610bd5565b610aa761059d565b11155b15610ab757610ab7610e20565b5b60035b600f5460ff166004811115610acc57fe5b148015610adf575062093a806007540142115b15610afa57600f80546004919060ff19166001835b02179055505b50600f5460ff165b5b90565b600060025b600f5460ff166004811115610b1c57fe5b148015610b375750610b2c610bd5565b610b3461059d565b11155b15610b4457610b44610e20565b5b60035b600f5460ff166004811115610b5957fe5b148015610b6c575062093a806007540142115b15610b8757600f80546004919060ff19166001835b02179055505b60035b600f5460ff166004811115610b9b57fe5b1480610bb8575060045b600f5460ff166004811115610bb657fe5b145b15610bc657506009546105c5565b610bce61059d565b90505b5b90565b6000600a54600854670de0b6b3a7640000028115156105be57fe5b0460010190505b90565b600060043614801590610c0e575060243614155b15610c1857600080fd5b60025b600f5460ff166004811115610c2c57fe5b148015610c475750610c3c610bd5565b610c4461059d565b11155b15610c5457610c54610e20565b5b60035b600f5460ff166004811115610c6957fe5b148015610c7c575062093a806007540142115b15610c9757600f80546004919060ff19166001835b02179055505b6004805b600f5460ff166004811115610cac57fe5b14610cb657600080fd5b600160a060020a0383161515610cca573392505b600954600160a060020a0384166000908152600d6020526040902054670de0b6b3a764000002811515610cf957fe5b600160a060020a038086166000908152600d6020526040808220829055815494909304955092169163a9059cbb9186918691516020015260405160e060020a63ffffffff8516028152600160a060020a0390921660048301526024820152604401602060405180830381600087803b1515610d7357600080fd5b6102c65a03f11515610d8457600080fd5b505050604051805150505b5b505b5b5050565b60045481565b600c54610100900460ff16156106fd5760015433600160a060020a03908116911614610dc857600080fd5b6000805b600f5460ff166004811115610ddd57fe5b14610de757600080fd5b600160a060020a038216600052600e6020525b5b505b5b5b50565b600c5460ff1681565b600e6020526000908152604090205460ff1681565b600f805460009160039160ff19166001835b02179055506003546008541415610e5357610e4b61059d565b600955610e5f565b610e5b610bd5565b6009555b42600755600954600854670de0b6b3a764000002811515610e7c57fe5b0490507f6cd5fa5a40ecd594f53649fa439e8f39cb2abf70e69eb744d79b8553c7d19788600754600854836009546040518085815260200184815260200183815260200182815260200194505050505060405180910390a1600154600854600160a060020a039091169080156108fc0290604051600060405180830381858888f193505050501515610f0d57600080fd5b60008054600154600a54600160a060020a039283169363a9059cbb939092169190859003906040516020015260405160e060020a63ffffffff8516028152600160a060020a0390921660048301526024820152604401602060405180830381600087803b1515610f7c57600080fd5b6102c65a03f11515610f8d57600080fd5b505050604051805150505b505600a165627a7a72305820937b8f711f4bcb2ac0ce8bf9db6c943d7c7b1ba7f8cff332258b31d9683656780029",
+  "networks": {
+    "1509243671997": {
+      "events": {
+        "0x9c89e828e6cee6374b68147c9e753e41746aad98ba255a527a4fc0ac1868bff9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "BidSubmission",
+          "type": "event"
+        },
+        "0x6cd5fa5a40ecd594f53649fa439e8f39cb2abf70e69eb744d79b8553c7d19788": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "auctionTime",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "moneyRaised",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "tokensSold",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "finalPrice",
+              "type": "uint256"
+            }
+          ],
+          "name": "AuctionEnded",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xfb3edf510412c8d20fd07ba201b2e61c593d85c3",
+      "updated_at": 1509249275314
+    },
+    "1509251594849": {
+      "events": {
+        "0x9c89e828e6cee6374b68147c9e753e41746aad98ba255a527a4fc0ac1868bff9": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "BidSubmission",
+          "type": "event"
+        },
+        "0x6cd5fa5a40ecd594f53649fa439e8f39cb2abf70e69eb744d79b8553c7d19788": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "auctionTime",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "moneyRaised",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "tokensSold",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "finalPrice",
+              "type": "uint256"
+            }
+          ],
+          "name": "AuctionEnded",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x089571ecddbe52d7865c3338b3da63c34971b4d5",
+      "updated_at": 1509251616950
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1509251616950
+}
