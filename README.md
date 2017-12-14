@@ -2,5 +2,5 @@ A sustainable model for a crowdsale. In the current crypto space, many companies
 
 In this revised ICO, we want the ICO incentives to align with the objectives of the founding team. Ideally, we create an ICO that promotes stability and fairness to the investors. Previous ICOs have had their valuations rise exponentially on the basis of unwarranted hype and investor FOMO. While this sounds like a good thing, a responsible founding team wants their token’s valuation to be tied to the inherent value of platform rather than speculative hype. In this document, we’ve outlined a way to achieve that by setting a token cap based on expected market interest; bringing in institutional investors early to provide stability, credibility, and accountability; and creating a prolonged release of the token as well as locking periods to further cement the token’s stability.
 
-Working whitepaper: tinyurl.com/raduscrowdsale
+Radus Crowdsale Specification: https://tinyurl.com/radusspec
 
